@@ -6,6 +6,13 @@ class Calculator
   end
 
   def display
-    puts @price * @quantity * 1.0685
+    puts @price * @quantity * tax_rate
+  end
+
+  def tax_rate
+    case @area
+    when '北海道'
+      1.0685
+    end
   end
 end
