@@ -13,6 +13,14 @@ class Calculator
     case @area
     when '北海道'
       1.0685
+    when '東日本'
+      1.0800
+    when '西日本'
+      1.0625
+    when '四国'
+      1.0400
+    when '九州'
+      1.0825
     end
   end
 end
