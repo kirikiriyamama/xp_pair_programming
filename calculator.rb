@@ -23,4 +23,8 @@ class Calculator
       1.0825
     end
   end
+
+  def raw_price
+    @price * @quantity
+  end
 end
