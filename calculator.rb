@@ -9,6 +9,10 @@ class Calculator
     puts @price * @quantity * tax_rate
   end
 
+  def raw_price
+    @price * @quantity
+  end
+
   def tax_rate
     case @area
     when '北海道'
@@ -24,7 +28,6 @@ class Calculator
     end
   end
 
-  def raw_price
-    @price * @quantity
+  def discount_rate
   end
 end

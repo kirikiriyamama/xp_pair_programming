@@ -37,6 +37,14 @@ RSpec.describe Calculator do
     it { expect(calculator.raw_price).to eq 200 }
   end
 
+  describe '#discount_rate' do
+    let(:price) { 1000 }
+    let(:quantity) { 2 }
+    let(:area) { '北海道' }
+
+    it { expect(calculator.discount_rate).to eq 1.03 }
+  end
+
   describe '#display' do
     let(:price) { 100 }
     let(:quantity) { 2 }
