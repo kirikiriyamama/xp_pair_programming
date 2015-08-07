@@ -1,1 +1,1 @@
-puts 'Hello World!'
+puts ARGV[0]
