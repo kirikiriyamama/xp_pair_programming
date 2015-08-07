@@ -6,7 +6,7 @@ class Calculator
   end
 
   def display
-    puts raw_price * discount_rate * tax_rate
+    puts (raw_price * discount_rate * tax_rate).to_i
   end
 
   def raw_price
